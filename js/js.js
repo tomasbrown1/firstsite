@@ -19,12 +19,14 @@ $(function() {
 	var $menu = $('.menu');
 	var $button = $('.button');
 
-	$menu.hide()
+	$menu.hide();
 	
 	$button.on('click', function() {
 		$menu.slideToggle(300);
 	});
 	
-	
+	$(window).scroll(function() {
+		$menu.slideUp(300);
+	})
 	
 });
