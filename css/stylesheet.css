@@ -29,11 +29,11 @@ header li {
 nav span img {
 	max-height: 60px;
 	margin-top: auto;
-	margin-right: 50px;
 }
 
 nav {
 	float: right;
+	margin-right: 20%;
 }
 
 ul a:link {
@@ -60,7 +60,7 @@ ul a:active {
 	display: inline-block;
 	vertical-align: middle;
 	margin-bottom: 20px;
-	margin-left: 50px;
+	margin-left: 20%;
 }
 h1{
 	display: inline-block;
@@ -105,31 +105,41 @@ footer {
 	height: 200px;
 	opacity: 0.90;
 	text-align: center;
+}
+
+#content img {
+	max-width: 99%;
 }
 video {
-	border: 1px solid #000000
+	border: 1px solid #000000;
+	max-width: 99%;
 }.theme {	width: 20px;	height: 20px;	border: 1px solid black;	display: inline-block;}#redbox, .backgroundred {	background-color: #FF0000;}#bluebox, .backgroundblue {	background-color: #0099FF;}#greenbox, .backgroundgreen {	background-color: #00CC66;}
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
 	#logo {
 		margin-left: 5px;
 	}
 	
-	nav span img {
+	nav {
 		margin-right: 5px;
 	}
-	
-	#content img {
-		max-width: 100%;
-	}
-	
-	video {
-		max-width: 100%;
+}
+
+@media screen and (max-width: 635px) {
+	#content {
+		min-width: 98%;
+		width: 98%;
 	}
 }
 
 @media screen and (max-width: 630px) {
 	#title {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	#titleall {
 		display: none;
 	}
 }
