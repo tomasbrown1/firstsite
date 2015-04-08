@@ -27,6 +27,6 @@ $(function() {
 	
 	$(window).scroll(function() {
 		$menu.slideUp(300);
-	})
+	});
 	
 });

@@ -14,7 +14,6 @@ header {
 
 header li {
 	display: inline-block;
-	color: #000;
 }
 
 .menu {
@@ -35,6 +34,26 @@ nav span img {
 
 nav {
 	float: right;
+}
+
+ul a:link {
+	text-decoration: none;
+	color: #666;
+}
+
+ul a:visited {
+	text-decoration: none;
+	color: #666;
+}
+
+ul a:hover {
+	text-decoration: underline;
+	color: #666;
+}
+
+ul a:active {
+	text-decoration: none;
+	color: #666;
 }
 #logo {
 	height: 60px;
@@ -70,6 +89,12 @@ a:active {
 	margin: 0 auto;
 	border-left: 1px solid black;
 	padding-left: 5px;
+}
+
+#content a {
+	padding-top: 70px;
+	margin-top: -70px;
+	position: absolute;
 }
 .clear {
 	clear: both;
@@ -85,8 +110,26 @@ video {
 	border: 1px solid #000000
 }.theme {	width: 20px;	height: 20px;	border: 1px solid black;	display: inline-block;}#redbox, .backgroundred {	background-color: #FF0000;}#bluebox, .backgroundblue {	background-color: #0099FF;}#greenbox, .backgroundgreen {	background-color: #00CC66;}
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 800px) {
+	#logo {
+		margin-left: 5px;
+	}
+	
+	nav span img {
+		margin-right: 5px;
+	}
+	
 	#content img {
-		max-width: 640px;
+		max-width: 100%;
+	}
+	
+	video {
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 630px) {
+	#title {
+		display: none;
 	}
 }
